@@ -22,13 +22,13 @@ HOST = localhost
 Endpoints disponibles:
 | Método HTTP | Endpoint                     | Descripción                                          |
 |-------------|------------------------------|------------------------------------------------------|
-| GET         | /categories                  | Obtiene la lista de categorías.                      |
-| GET         | /genres                      | Obtiene la lista de géneros.                         |
-| GET         | /catalog                     | Obtiene todo el catálogo de películas.               |
-| GET         | /catalog/id/:id              | Obtiene una película por su ID.                      |
-| GET         | /catalog/name/:name          | Obtiene películas por su nombre o parte del nombre.  |
-| GET         | /catalog/genre/:genre        | Obtiene películas por su género.                     |
-| GET         | /catalog/category/:category  | Obtiene películas por su categoría.                  |
+| GET         | [/categories](#listar-todas-las-categorías)                  | Obtiene la lista de categorías.                      |
+| GET         | [/genres](#listar-todos-los-géneros)                      | Obtiene la lista de géneros.                         |
+| GET         | [/catalog](#listar-todas-las-películas)                     | Obtiene todo el catálogo de películas.               |
+| GET         | [/catalog/id/:id](#obtener-una-película-por-id)              | Obtiene una película por su ID.                      |
+| GET         | [/catalog/name/:name](#obtener-películas-por-su-nombre-o-parte-del-nombre)          | Obtiene películas por su nombre o parte del nombre.  |
+| GET         | [/catalog/genre/:genre](#obtener-películas-por-su-género)        | Obtiene películas por su género.                     |
+| GET         | [/catalog/category/:category](#obtener-películas-por-su-categoría)  | Obtiene películas por su categoría.                  |
 
 ### Categorías
 #### Listar todas las categorías
