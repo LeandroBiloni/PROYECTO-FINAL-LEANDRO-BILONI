@@ -12,7 +12,7 @@ const CatalogView = require('./src/views/catalogView.js');
 
 const { Op } = require('sequelize');
 const PORT = process.env.PORT || 3000;
-const baseURL = 'http://localhost:' + PORT;
+const baseURL = 'http://'+ process.env.HOST + ':' + PORT;
 
 app.use(express.json());
 
@@ -125,7 +125,7 @@ app.get('/catalog/id/:id', async (req,res) => {
     }
 })
 
-/////////////////GET MOVIE BY NAME/////////////////
+/////////////////GET MOVIES BY NAME/////////////////
 app.get('/catalog/name/:name', async (req,res) => {
     try{
         await sequelize.authenticate();
